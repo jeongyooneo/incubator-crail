@@ -67,7 +67,7 @@ public class CrailConfiguration {
 	private static Properties loadProperties(String resourceName) throws IOException {
 		Properties properties = new Properties();
 
-		String base = System.getenv("CRAIL_HOME");
+		String base = "/home/disagg/incubator-crail";
 		if (base == null || base.isEmpty()) {
 			throw new IllegalArgumentException("CRAIL_HOME environment variable is not set or empty");
 		}

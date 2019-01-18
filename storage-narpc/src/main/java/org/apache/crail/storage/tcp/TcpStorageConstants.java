@@ -38,7 +38,7 @@ public class TcpStorageConstants {
 	public static String STORAGE_TCP_INTERFACE = "eth0";
 	
 	public static final String STORAGE_TCP_PORT_KEY = "crail.storage.tcp.port";
-	public static int STORAGE_TCP_PORT = 50020;
+	public static int STORAGE_TCP_PORT = 50021;
 	
 	public static final String STORAGE_TCP_STORAGE_LIMIT_KEY = "crail.storage.tcp.storagelimit";
 	public static long STORAGE_TCP_STORAGE_LIMIT = 1073741824;

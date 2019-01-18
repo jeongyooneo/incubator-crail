@@ -68,7 +68,9 @@ elif [ "$COMMAND" = "test" ] ; then
 fi
 
 CONF_PATH="$bin"/../conf
-export CLASSPATH="$bin"/../jars/*:${CONF_PATH}:.
+export CLASSPATH="${CRAIL_HOME}/assembly/target/apache-crail-1.2-incubating-SNAPSHOT-bin/apache-crail-1.2-incubating-SNAPSHOT/jars"/*:${CONF_PATH}:.
+
+
 export LD_LIBRARY_PATH="$bin/../lib:$LD_LIBRARY_PATH"
 
 if [ -f "${CONF_PATH}/crail-env.sh" ]; then
@@ -78,4 +80,4 @@ if [ -f "${CONF_PATH}/crail-env.sh" ]; then
   set +a
 fi
 
-exec "$JAVA" -Dproc_$COMMAND -Dsun.nio.PageAlignDirectMemory=true $CRAIL_EXTRA_JAVA_OPTIONS $CLASS "$@"
+exec java -Dproc_$COMMAND -Dsun.nio.PageAlignDirectMemory=true $CRAIL_EXTRA_JAVA_OPTIONS $CLASS "$@"

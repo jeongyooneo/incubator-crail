@@ -31,3 +31,5 @@ rpc-narpc/target/
 storage/target/
 storage-nvmf/target/
 storage-rdma/target/
+
+logs/

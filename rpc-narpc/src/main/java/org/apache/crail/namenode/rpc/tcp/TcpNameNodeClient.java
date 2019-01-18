@@ -53,7 +53,7 @@ public class TcpNameNodeClient implements RpcClient {
     public RpcConnection connect(InetSocketAddress address) throws IOException {
     	try {
     		NaRPCEndpoint<TcpNameNodeRequest, TcpNameNodeResponse> endpoint = clientGroup.createEndpoint();
-    		endpoint.connect(address);
+		endpoint.connect(address);
     		TcpRpcConnection connection = new TcpRpcConnection(endpoint);
     		allConnections.add(connection);
     		return connection;
