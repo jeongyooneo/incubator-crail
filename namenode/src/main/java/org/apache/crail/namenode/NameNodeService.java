@@ -86,7 +86,7 @@ public class NameNodeService implements RpcNameNodeService, Sequencer {
 		//get params
 		FileName fileHash = request.getFileName();
 		CrailNodeType type = request.getFileType();
-		boolean writeable = type.isDirectory() ? false : true; 
+		boolean writeable = type.isDirectory() ? false : true;
 		int storageClass = request.getStorageClass();
 		int locationClass = request.getLocationClass();
 		boolean enumerable = request.isEnumerable();

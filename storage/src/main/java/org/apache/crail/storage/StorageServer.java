@@ -91,7 +91,7 @@ public interface StorageServer extends Configurable, Runnable {
 				if (line.hasOption(typeOption.getOpt())) {
 					storageName = line.getOptionValue(typeOption.getOpt());
 					storageType = storageTypes.get(storageName).intValue();
-				}				
+				}
 				if (line.hasOption(classOption.getOpt())) {
 					storageClass = Integer.parseInt(line.getOptionValue(classOption.getOpt()));
 				}					
@@ -142,7 +142,6 @@ public interface StorageServer extends Configurable, Runnable {
 		}		
 		LOG.info("connected to namenode(s) " + rpcConnection.toString());				
 		
-		
 		StorageRpcClient storageRpc = new StorageRpcClient(storageType, CrailStorageClass.get(storageClass), server.getAddress(), rpcConnection);
 		
 		HashMap<Long, Long> blockCount = new HashMap<Long, Long>();
@@ -150,7 +149,7 @@ public interface StorageServer extends Configurable, Runnable {
 		long lba = 0;
 		while (server.isAlive()) {
 			StorageResource resource = server.allocateResource();
-			if (resource == null){
+			if (resource == null) {
 				break;
 			} else {
 				storageRpc.setBlock(lba, resource.getAddress(), resource.getLength(), resource.getKey());

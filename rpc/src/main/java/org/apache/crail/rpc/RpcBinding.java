@@ -18,9 +18,6 @@
 
 package org.apache.crail.rpc;
 
-import org.apache.crail.rpc.RpcClient;
-
-
 public interface RpcBinding extends RpcClient {
 	public RpcServer launchServer(RpcNameNodeService service);
 	

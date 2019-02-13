@@ -74,7 +74,7 @@ public class ClientTest {
 	}
 
 	@Test
-	public void testlookupDirectory() throws Exception {
+	public void testLookupDirectory() throws Exception {
 		fs.lookup(basePath).get().asDirectory();
 	}
 

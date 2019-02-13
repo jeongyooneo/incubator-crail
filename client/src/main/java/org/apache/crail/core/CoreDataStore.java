@@ -108,7 +108,7 @@ public class CoreDataStore extends CrailStore {
 		this.bufferCache = BufferCache.createInstance(CrailConstants.CACHE_IMPL);
 		this.statistics = new CrailStatistics();
 
-		//Datanodes
+		// Datanodes
 		StringTokenizer tokenizer = new StringTokenizer(CrailConstants.STORAGE_TYPES, ",");
 		LinkedList<StorageClient> dataNodeClients = new LinkedList<StorageClient>();
 		while (tokenizer.hasMoreTokens()){
@@ -120,7 +120,7 @@ public class CoreDataStore extends CrailStore {
 		}
 		this.datanodeEndpointCache = new EndpointCache(fsId, dataNodeClients);
 
-		//Namenode
+		// Namenode
 		InetSocketAddress nnAddr = CrailUtils.getNameNodeAddress();
 		this.rpcClient = RpcClient.createInstance(CrailConstants.NAMENODE_RPC_TYPE);
 		rpcClient.init(conf, null);

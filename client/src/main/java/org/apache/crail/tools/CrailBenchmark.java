@@ -110,7 +110,7 @@ public class CrailBenchmark {
 		long start = System.currentTimeMillis();
 		while (ops < loop) {
 			buf.clear();
-			if (buffered){
+			if (buffered) {
 				bufferedStream.write(buf.getByteBuffer());
 			} else {
 				directStream.write(buf).get();
