@@ -527,13 +527,13 @@ From: 'The Netty Project' (http://netty.io/)
   - The Netty Project (http://netty.io/) io.netty:netty:bundle:3.7.0.Final
     License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
 
-darpc-1.8.jar
+darpc-1.9.jar
 -------------
-Copyright (C) 2016-2018, IBM Corporation
+Copyright (C) 2016-2019, IBM Corporation
 
-disni-2.0.jar
+disni-2.1.jar
 --------------
-Copyright (C) 2016-2018, IBM Corporation
+Copyright (C) 2016-2019, IBM Corporation
 
 gson-2.2.4.jar
 --------------
@@ -997,13 +997,13 @@ java-xmlbuilder-0.4.jar
 -----------------------
 Copyright 2008 James Murty (www.jamesmurty.com)
 
-narpc-1.4.jar
+narpc-1.5.jar
 -------------
-Copyright (C) 2018, IBM Corporation
+Copyright (C) 2018-2019, IBM Corporation
 
-jnvmf-1.5.jar
+jnvmf-1.6.jar
 -------------
-Copyright (C) 2018, IBM Corporation
+Copyright (C) 2018-2019, IBM Corporation
 
 jets3t-0.9.0.jar
 ----------------
